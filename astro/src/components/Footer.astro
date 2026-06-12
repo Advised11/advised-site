@@ -1,0 +1,42 @@
+---
+const LINKEDIN = 'https://www.linkedin.com/in/francisndimba';
+const CALENDLY = 'https://calendly.com/contact-advised-seo/30min';
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="/"><img class="mark-img" src="/logo-light.png" alt="" /> Advised</a>
+        <p class="tag">Freelance SEO pour TPE/PME &amp; SaaS. Une visibilité durable, rentable et transmissible — sur Google et dans les réponses IA.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="/services">Services</a>
+        <a href="/#methode">Méthode</a>
+        <a href="/a-propos">À propos</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:contact@advised-seo.fr">contact@advised-seo.fr</a>
+        <a href={CALENDLY} target="_blank" rel="noopener">Réserver 30 min</a>
+        <a href={LINKEDIN} target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div>
+        <h4>Certifications</h4>
+        <a href="#">SEMrush</a>
+        <a href="#">Google Analytics</a>
+        <a href="#">Google Ads</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {year} Advised — Francis Ndimba. Tous droits réservés.</span>
+      <span style="display:flex;gap:24px">
+        <a href="#" style="display:inline">Mentions légales</a>
+        <a href="#" style="display:inline">Confidentialité</a>
+      </span>
+    </div>
+  </div>
+</footer>

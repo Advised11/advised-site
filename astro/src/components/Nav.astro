@@ -1,0 +1,24 @@
+---
+const links = [
+  { href: '/services', label: 'Services' },
+  { href: '/#methode', label: 'Méthode' },
+  { href: '/a-propos', label: 'À propos' },
+  { href: '/contact', label: 'Contact' },
+];
+const LINKEDIN = 'https://www.linkedin.com/in/francisndimba';
+const CALENDLY = 'https://calendly.com/contact-advised-seo/30min';
+---
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="/"><img class="mark-img" src="/logo-light.png" alt="" /> Advised</a>
+    <nav class="nav-links">
+      {links.map((l) => <a href={l.href}>{l.label}</a>)}
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href={CALENDLY} target="_blank" rel="noopener">Réserver 30 min</a>
+      <a class="btn btn-primary" href={LINKEDIN} target="_blank" rel="noopener">Pré-audit gratuit <span class="arr">→</span></a>
+    </div>
+    <button class="nav-burger" aria-label="Menu" id="burger"><span></span><span></span><span></span></button>
+  </div>
+</header>

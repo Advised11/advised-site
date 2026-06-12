@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+const title = "Contact — Advised · Pré-audit SEO gratuit";
+const description = "Parlons de votre visibilité. Réservez 30 minutes ou écrivez à contact@advised-seo.fr — pré-audit SEO gratuit, sans engagement.";
+---
+
+<Base title={title} description={description}>
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="aurora"><span class="blob b1"></span></div>
+  <div class="wrap">
+    <span class="hero-badge"><span class="pip">✦</span> Pré-audit gratuit, sans engagement</span>
+    <h1 class="display">Parlons de votre visibilité.</h1>
+    <p class="lead">Réservez 30 minutes ou écrivez-moi&nbsp;: je reviens vers vous sous 24&nbsp;h avec un premier regard sur votre potentiel SEO.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <div class="wrap contact-cards">
+    <!-- Calendly -->
+    <div class="contact-card feature reveal">
+      <span class="kicker">Le plus rapide</span>
+      <div class="h3" style="margin-top:16px">Réserver un appel de 30 min</div>
+      <p style="margin-top:10px">Choisissez directement un créneau qui vous convient. On fait le point sur vos enjeux et je vous dis franchement où se cache votre potentiel.</p>
+      <a class="cal-embed" href="https://calendly.com/contact-advised-seo/30min" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+        <div>
+          <div class="ic">📅</div>
+          <div style="font-weight:700;color:#fff;font-size:18px">Ouvrir mon agenda Calendly</div>
+          <div style="color:var(--on-dark-muted);font-size:14px;margin-top:6px">calendly.com/contact-advised-seo/30min</div>
+        </div>
+      </a>
+      <div class="btnrow" style="margin-top:22px">
+        <a class="btn btn-soft" href="https://calendly.com/contact-advised-seo/30min" target="_blank" rel="noopener">Réserver 30 min <span class="arr">→</span></a>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="contact-card reveal">
+      <span class="kicker">M'écrire</span>
+      <div class="h3" style="margin-top:16px">Envoyez-moi un message</div>
+      <form action="mailto:contact@advised-seo.fr" method="post" enctype="text/plain" style="display:flex;flex-direction:column;gap:16px;margin-top:22px">
+        <div class="field"><label for="nom">Nom</label><input id="nom" name="nom" type="text" placeholder="Votre nom" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="vous@entreprise.com" required></div>
+        <div class="field"><label for="site">Votre site web</label><input id="site" name="site" type="url" placeholder="https://"></div>
+        <div class="field"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Parlez-moi de votre projet, vos objectifs, votre secteur…"></textarea></div>
+        <button class="btn btn-primary" type="submit" style="justify-content:center">Envoyer mon message <span class="arr">→</span></button>
+      </form>
+      <p style="margin-top:18px;color:var(--muted);font-size:14px">Ou directement&nbsp;: <a href="mailto:contact@advised-seo.fr" style="color:var(--violet);font-weight:600">contact@advised-seo.fr</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- REASSURANCE -->
+<section class="section tight manifesto">
+  <div class="wrap" style="text-align:center">
+    <p class="q" style="margin-inline:auto;max-width:24ch">Audit livré sous 10 jours ouvrés — ou offert.</p>
+    <p style="margin-inline:auto;text-align:center">11 ans d'expérience · 87 % de clients fidélisés · certifié SEMrush, Google Analytics &amp; Google Ads.</p>
+  </div>
+</section>
+</Base>

@@ -1,0 +1,56 @@
+---
+import '../styles/advised.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="Advised" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <Nav />
+    <slot />
+    <Footer />
+
+    <script>
+      // Menu mobile
+      const burger = document.getElementById('burger');
+      if (burger) {
+        burger.addEventListener('click', () => {
+          const l = document.querySelector('.nav-links');
+          const open = l.style.display === 'flex';
+          l.style.display = open ? '' : 'flex';
+          if (!open) {
+            Object.assign(l.style, {
+              position: 'absolute', flexDirection: 'column', top: '70px',
+              left: '0', right: '0', background: 'var(--dark-2)',
+              padding: '18px 24px', borderBottom: '1px solid var(--dark-line)', gap: '4px',
+            });
+          }
+        });
+      }
+      // Apparition au scroll
+      const io = new IntersectionObserver((es) => {
+        es.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
