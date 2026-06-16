@@ -1,0 +1,12 @@
+# robots.txt — https://www.advised-seo.fr
+# ----------------------------------------------------------------------
+# Tous les robots sont autorisés à explorer l'intégralité du site.
+# Les crawlers IA (GPTBot, ClaudeBot, PerplexityBot, Google-Extended…)
+# sont intentionnellement autorisés : visibilité GEO / AI Overviews.
+# ----------------------------------------------------------------------
+
+User-agent: *
+Allow: /
+
+# Emplacement du sitemap
+Sitemap: https://www.advised-seo.fr/sitemap.xml
