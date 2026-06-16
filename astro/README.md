@@ -39,14 +39,46 @@ astro/
 │  │  ├─ Nav.astro
 │  │  └─ Footer.astro
 │  ├─ pages/               # une route = un fichier
-│  │  ├─ index.astro       # /
-│  │  ├─ services.astro    # /services
-│  │  ├─ a-propos.astro    # /a-propos
-│  │  └─ contact.astro     # /contact
+│  │  ├─ index.astro            # /
+│  │  ├─ services.astro         # /services
+│  │  ├─ a-propos.astro         # /a-propos
+│  │  ├─ contact.astro          # /contact
+│  │  ├─ pre-audit.astro        # /pre-audit (formulaire de pré-audit)
+│  │  ├─ secteur-saas.astro     # /secteur-saas
+│  │  ├─ secteur-tpe-pme.astro  # /secteur-tpe-pme
+│  │  ├─ secteur-ecommerce.astro# /secteur-ecommerce
+│  │  ├─ secteur-local.astro    # /secteur-local
+│  │  └─ secteur-media.astro    # /secteur-media
 │  └─ styles/advised.css   # design system complet (couleurs, typo, composants)
 ├─ astro.config.mjs
 └─ package.json
 ```
+
+## Pages secteurs &amp; pré-audit
+
+Cinq pages verticales par cible — chacune avec : douleur du segment, un cas client
+mappé (chiffré), objections et CTA, plus une FAQ longue traîne et des données
+structurées `FAQPage` (JSON-LD) pour le SEO/GEO :
+
+| Route | Cible | Cas client |
+|---|---|---|
+| `/secteur-saas` | SaaS B2B | LumApps |
+| `/secteur-tpe-pme` | TPE / PME | Serge Ferrari |
+| `/secteur-ecommerce` | E-commerce | Groupe SEB / Tefal |
+| `/secteur-local` | Local &amp; multi-sites | SMAC |
+| `/secteur-media` | Média &amp; éditorial | Bonduelle |
+
+Elles sont reliées via le menu déroulant **Secteurs** (`Nav.astro`), la colonne
+Secteurs du `Footer.astro` et la section « Pour qui ? » de l'accueil.
+
+## Formulaire de pré-audit
+
+La route `/pre-audit` (`pre-audit.astro`) remplace les anciens CTA « pré-audit »
+qui pointaient vers LinkedIn. Le formulaire qualifie le lead (segment, frein SEO,
+CMS, budget, objectif). Par défaut il ouvre un email pré-rempli vers
+`contact@advised-seo.fr` ; pour une réception automatique, renseignez la constante
+`ENDPOINT` en haut du `<script>` de `pre-audit.astro` avec un endpoint
+[Formspree](https://formspree.io) ou [Getform](https://getform.io).
 
 ## À personnaliser
 

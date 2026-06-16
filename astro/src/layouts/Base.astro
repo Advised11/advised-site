@@ -44,6 +44,10 @@ const { title, description } = Astro.props;
           }
         });
       }
+      // Menu Secteurs (mobile)
+      document.querySelectorAll('.dd-toggle').forEach((t) => t.addEventListener('click', () => {
+        if (window.matchMedia('(max-width:720px)').matches) t.closest('.has-dd').classList.toggle('open');
+      }));
       // Apparition au scroll
       const io = new IntersectionObserver((es) => {
         es.forEach((e) => {

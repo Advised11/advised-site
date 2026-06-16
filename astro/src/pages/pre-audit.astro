@@ -1,0 +1,169 @@
+---
+import Base from '../layouts/Base.astro';
+const title = "Pré-audit SEO gratuit — Advised · Francis Ndimba";
+const description = "Demandez votre pré-audit SEO gratuit et sans engagement. Quelques questions sur votre site, votre secteur et vos objectifs — réponse sous 24 h avec un premier regard d'expert.";
+---
+
+<Base title={title} description={description}>
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="aurora"><span class="blob b1"></span></div>
+  <div class="wrap">
+    <span class="hero-badge"><span class="pip">✦</span> Gratuit · sans engagement · réponse sous 24&nbsp;h</span>
+    <h1 class="display">Demandez votre pré-audit SEO.</h1>
+    <p class="lead">Quelques questions sur votre site, votre secteur et vos objectifs. Je reviens vers vous sous 24&nbsp;h avec un premier diagnostic et les leviers de visibilité que je repère immédiatement.</p>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section">
+  <div class="wrap preaudit">
+    <!-- FORM CARD -->
+    <div class="pa-form" id="paForm">
+      <div class="pa-body">
+        <span class="kicker">Pré-audit gratuit</span>
+        <div class="h3" style="margin-top:14px">Parlez-moi de votre projet</div>
+        <p style="color:var(--muted);margin:10px 0 0;font-size:15.5px">Plus c'est précis, plus mon premier regard sera utile. Tout reste confidentiel.</p>
+
+        <form id="preauditForm" novalidate>
+          <div class="pa-step"><span>01</span> Vous &amp; votre site</div>
+          <div class="pa-grid">
+            <div class="field"><label for="nom">Nom &amp; prénom *</label><input id="nom" name="nom" type="text" placeholder="Votre nom" required></div>
+            <div class="field"><label for="entreprise">Entreprise</label><input id="entreprise" name="entreprise" type="text" placeholder="Nom de l'entreprise"></div>
+            <div class="field"><label for="email">Email professionnel *</label><input id="email" name="email" type="email" placeholder="vous@entreprise.com" required></div>
+            <div class="field"><label for="site">URL de votre site *</label><input id="site" name="site" type="url" placeholder="https://" required></div>
+            <div class="field full"><label for="cms">CMS / technologie <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--muted-2)">(si vous savez)</span></label><input id="cms" name="cms" type="text" placeholder="WordPress, Shopify, Webflow, Drupal, sur-mesure…"></div>
+          </div>
+
+          <div class="pa-step"><span>02</span> Votre profil</div>
+          <div class="field full">
+            <label>Quel segment vous décrit le mieux ?</label>
+            <div class="chips" role="radiogroup" aria-label="Segment">
+              <label class="chip"><input type="radio" name="segment" value="SaaS B2B"><span>SaaS B2B</span></label>
+              <label class="chip"><input type="radio" name="segment" value="TPE / PME"><span>TPE / PME</span></label>
+              <label class="chip"><input type="radio" name="segment" value="E-commerce"><span>E-commerce</span></label>
+              <label class="chip"><input type="radio" name="segment" value="Local / multi-sites"><span>Local / multi-sites</span></label>
+              <label class="chip"><input type="radio" name="segment" value="Média / éditorial"><span>Média / éditorial</span></label>
+              <label class="chip"><input type="radio" name="segment" value="Autre"><span>Autre</span></label>
+            </div>
+          </div>
+
+          <div class="pa-step"><span>03</span> Votre enjeu</div>
+          <div class="field full">
+            <label>Principal frein SEO aujourd'hui ?</label>
+            <div class="chips" aria-label="Frein principal">
+              <label class="chip"><input type="checkbox" name="frein" value="Trafic instable / chutes d'updates"><span>Trafic instable</span></label>
+              <label class="chip"><input type="checkbox" name="frein" value="Trafic qui ne convertit pas"><span>Peu de leads / ventes</span></label>
+              <label class="chip"><input type="checkbox" name="frein" value="Contenu sans stratégie"><span>Contenu sans cap</span></label>
+              <label class="chip"><input type="checkbox" name="frein" value="Problèmes techniques"><span>Freins techniques</span></label>
+              <label class="chip"><input type="checkbox" name="frein" value="Migration / refonte"><span>Migration / refonte</span></label>
+              <label class="chip"><input type="checkbox" name="frein" value="Absence dans les réponses IA"><span>Invisible sur l'IA</span></label>
+            </div>
+          </div>
+          <div class="pa-grid" style="margin-top:18px">
+            <div class="field">
+              <label for="objectif">Objectif principal</label>
+              <input id="objectif" name="objectif" type="text" placeholder="Ex. : plus de leads qualifiés, +CA organique…">
+            </div>
+            <div class="field">
+              <label for="budget">Budget mensuel indicatif</label>
+              <input id="budget" name="budget" type="text" placeholder="Ex. : 2 000 € / mois, à définir…">
+            </div>
+            <div class="field full"><label for="message">Quelque chose à ajouter ?</label><textarea id="message" name="message" placeholder="Votre contexte, vos contraintes, vos questions…"></textarea></div>
+          </div>
+
+          <button class="btn btn-primary" type="submit" style="justify-content:center;width:100%;margin-top:28px;padding:16px 24px">Envoyer ma demande de pré-audit <span class="arr">→</span></button>
+          <p class="pa-note">En envoyant ce formulaire, vous acceptez d'être recontacté par Advised au sujet de votre projet. Aucune revente de données, aucun spam.</p>
+        </form>
+      </div>
+
+      <!-- SUCCESS STATE -->
+      <div class="pa-success">
+        <div class="ok">✓</div>
+        <div class="h3" style="color:var(--ink)">Demande bien reçue.</div>
+        <p style="color:var(--muted);max-width:42ch;margin:14px auto 0;font-size:16px">Merci&nbsp;! Je reviens vers vous sous 24&nbsp;h ouvrées avec un premier regard sur votre potentiel de visibilité. Si votre messagerie s'est ouverte, vérifiez simplement que l'email est bien parti.</p>
+        <div class="btnrow" style="justify-content:center;margin-top:28px">
+          <a class="btn btn-ghost" href="https://calendly.com/contact-advised-seo/30min" target="_blank" rel="noopener">Réserver 30 min en plus</a>
+          <a class="btn btn-primary" href="/">Retour à l'accueil <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ASIDE -->
+    <aside class="pa-aside">
+      <div class="card" style="padding:clamp(24px,2.4vw,30px)">
+        <span class="kicker">Ce qui se passe ensuite</span>
+        <ul class="checks" style="margin-top:16px">
+          <li><span class="tick">1</span> Je regarde votre site &amp; votre marché sous 24&nbsp;h</li>
+          <li><span class="tick">2</span> On échange 30 min sur vos enjeux réels</li>
+          <li><span class="tick">3</span> Je vous dis franchement où se cache le potentiel</li>
+        </ul>
+      </div>
+      <div class="contact-card feature" style="padding:clamp(24px,2.4vw,30px)">
+        <div class="h3" style="font-size:20px">Vous préférez parler ?</div>
+        <p style="margin-top:10px">Choisissez directement un créneau de 30 minutes dans mon agenda.</p>
+        <div class="btnrow" style="margin-top:18px">
+          <a class="btn btn-soft" href="https://calendly.com/contact-advised-seo/30min" target="_blank" rel="noopener">Réserver 30 min <span class="arr">→</span></a>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <span class="badge"><span class="dot"></span>Audit sous 10 j ou offert</span>
+        <span class="badge"><span class="dot"></span>Sans engagement</span>
+        <span class="badge"><span class="dot"></span>11 ans d'expérience</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<script is:inline>
+  // ===== PRE-AUDIT FORM =====
+  // ▼▼ Pour recevoir les demandes en base/email automatiquement, collez ici votre endpoint
+  //    Formspree (https://formspree.io) ou Getform. Laissez vide pour utiliser l'email pré-rempli.
+  const ENDPOINT = ""; // ex: "https://formspree.io/f/xxxxxxx"
+  const MAILTO  = "contact@advised-seo.fr";
+
+  const form = document.getElementById('preauditForm');
+  const card = document.getElementById('paForm');
+
+  function collect(){
+    const fd = new FormData(form);
+    const data = {};
+    fd.forEach((v,k)=>{ data[k] = data[k] ? data[k]+', '+v : v; });
+    return data;
+  }
+  function buildMailto(data){
+    const subject = `Demande de pré-audit SEO — ${data.nom||''}${data.entreprise? ' ('+data.entreprise+')':''}`;
+    const lines = [
+      `Nom : ${data.nom||''}`,
+      `Entreprise : ${data.entreprise||''}`,
+      `Email : ${data.email||''}`,
+      `Site : ${data.site||''}`,
+      `CMS / techno : ${data.cms||''}`,
+      `Segment : ${data.segment||''}`,
+      `Frein principal : ${data.frein||''}`,
+      `Objectif : ${data.objectif||''}`,
+      `Budget indicatif : ${data.budget||''}`,
+      ``,
+      `Message :`,
+      `${data.message||''}`
+    ];
+    return `mailto:${MAILTO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+  }
+  function showSuccess(){ card.classList.add('sent'); window.scrollTo({top: card.getBoundingClientRect().top + window.scrollY - 110, behavior:'smooth'}); }
+
+  form.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    if(!form.reportValidity()) return;
+    const data = collect();
+    if(ENDPOINT){
+      try{
+        const res = await fetch(ENDPOINT,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},body:JSON.stringify(data)});
+        if(res.ok){ showSuccess(); return; }
+      }catch(err){ /* fall through to mailto */ }
+    }
+    // Fallback : ouvre l'email pré-rempli
+    window.location.href = buildMailto(data);
+    showSuccess();
+  });
+</script>
+</Base>
