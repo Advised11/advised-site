@@ -73,4 +73,20 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Infos pour les IA / LLMs -->
+  <url>
+    <loc>https://www.advised-seo.fr/llm-info</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://www.advised-seo.fr/mentions-legales</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>

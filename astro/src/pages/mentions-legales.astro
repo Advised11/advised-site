@@ -1,0 +1,135 @@
+---
+import Base from '../layouts/Base.astro';
+const title = "Mentions légales — Advised";
+const description = "Mentions légales du site advised-seo.fr : éditeur, hébergeur, propriété intellectuelle, données personnelles (RGPD) et cookies.";
+
+const EMAIL = "contact@advised-seo.fr";
+const EMAIL_RGPD = "francis@advised-seo.fr";
+const UPDATED = "17 juin 2026";
+---
+
+<Base title={title} description={description}>
+<!-- HERO -->
+<section class="page-hero">
+  <div class="aurora"><span class="blob b1"></span></div>
+  <div class="wrap">
+    <span class="kicker">Informations légales</span>
+    <h1 class="display">Mentions légales</h1>
+    <p class="lead">Conformément aux dispositions des articles 6-III et 19 de la loi n°&nbsp;2004-575 du 21&nbsp;juin 2004 pour la confiance dans l'économie numérique (LCEN).</p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="section light-2">
+  <div class="wrap legal-doc">
+
+    <!-- 1. EDITEUR -->
+    <div class="legal-block reveal">
+      <h2 class="h3">1. Présentation du site</h2>
+      <p>Conformément aux dispositions des articles 6-III et 19 de la loi n°&nbsp;2004-575 du 21&nbsp;juin 2004 pour la confiance dans l'économie numérique (LCEN), il est précisé aux utilisateurs du site <strong>https://www.advised-seo.fr</strong> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.</p>
+      <dl class="legal-facts">
+        <div><dt>Propriétaire du site</dt><dd>Advised — entreprise individuelle</dd></div>
+        <div><dt>Siège social</dt><dd>161 chemin du Crêt de Montcher, 69210 Lentilly, France</dd></div>
+        <div><dt>Capital</dt><dd>1 €</dd></div>
+        <div><dt>SIRET</dt><dd>880 497 953 00021 (SIREN&nbsp;: 880 497 953)</dd></div>
+        <div><dt>TVA</dt><dd>TVA non applicable, art. 293 B du CGI</dd></div>
+        <div><dt>Responsable de la publication</dt><dd>Francis Ndimba</dd></div>
+        <div><dt>Contact</dt><dd><a href={`mailto:${EMAIL}`}>{EMAIL}</a></dd></div>
+      </dl>
+    </div>
+
+    <!-- 2. HEBERGEUR -->
+    <div class="legal-block reveal">
+      <h2 class="h3">2. Hébergeur</h2>
+      <p>Le site est hébergé par&nbsp;:</p>
+      <dl class="legal-facts">
+        <div><dt>Hébergeur</dt><dd>Netlify, Inc.</dd></div>
+        <div><dt>Adresse</dt><dd>2325 3rd Street, Suite 215, San Francisco, California 94107, États-Unis</dd></div>
+        <div><dt>Contact</dt><dd><a href="https://www.netlify.com" target="_blank" rel="noopener">www.netlify.com</a> — support@netlify.com</dd></div>
+      </dl>
+    </div>
+
+    <!-- 3. PROPRIETE INTELLECTUELLE -->
+    <div class="legal-block reveal">
+      <h2 class="h3">3. Propriété intellectuelle</h2>
+      <p>L'ensemble du contenu présent sur le site advised-seo.fr, incluant, de manière non limitative, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive de Advised by Francis Ndimba, à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.</p>
+      <p>Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces éléments est strictement interdite sans accord écrit préalable de Francis Ndimba.</p>
+    </div>
+
+    <!-- 4. RGPD -->
+    <div class="legal-block reveal">
+      <h2 class="h3">4. Données personnelles (RGPD)</h2>
+      <p>Conformément au Règlement (UE) 2016/679 du 27&nbsp;avril 2016 (RGPD) et à la loi Informatique et Libertés du 6&nbsp;janvier 1978 modifiée, Advised by Francis Ndimba s'engage à garantir la confidentialité et la protection des données personnelles collectées.</p>
+
+      <p><strong>Données collectées&nbsp;:</strong></p>
+      <ul class="legal-list">
+        <li>Nom, prénom, adresse e-mail (via formulaire de contact)</li>
+        <li>Données de navigation (cookies, statistiques anonymisées)</li>
+      </ul>
+
+      <p><strong>Finalité&nbsp;:</strong> ces données sont utilisées exclusivement pour répondre aux demandes de contact, réaliser des audits SEO ou améliorer la qualité du site.</p>
+
+      <p><strong>Responsable du traitement&nbsp;:</strong> Francis Ndimba — <a href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
+
+      <p><strong>Durée de conservation&nbsp;:</strong> les données sont conservées pour une durée maximale de 3&nbsp;ans à compter du dernier contact.</p>
+
+      <p><strong>Droits des utilisateurs&nbsp;:</strong> vous disposez d'un droit d'accès, de rectification, de suppression, d'opposition, de limitation et de portabilité de vos données. Pour exercer ces droits, contactez&nbsp;: <a href={`mailto:${EMAIL_RGPD}`}>{EMAIL_RGPD}</a>.</p>
+
+      <p>En cas de litige, vous pouvez saisir la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>).</p>
+    </div>
+
+    <!-- 5. COOKIES -->
+    <div class="legal-block reveal">
+      <h2 class="h3">5. Cookies</h2>
+      <p>Le site advised-seo.fr peut utiliser des cookies pour&nbsp;:</p>
+      <ul class="legal-list">
+        <li>mesurer la fréquentation du site (via Google Analytics ou outils équivalents)&nbsp;;</li>
+        <li>améliorer l'expérience utilisateur et le contenu proposé.</li>
+      </ul>
+      <p>Vous pouvez refuser le dépôt de cookies en configurant votre navigateur. Pour en savoir plus&nbsp;: <a href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser" target="_blank" rel="noopener">cnil.fr/fr/cookies-les-outils-pour-les-maitriser</a>.</p>
+    </div>
+
+    <!-- 6. RESPONSABILITE -->
+    <div class="legal-block reveal">
+      <h2 class="h3">6. Responsabilité</h2>
+      <p>Advised by Francis Ndimba met tout en œuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur le site. Toutefois, elle ne saurait être tenue responsable&nbsp;:</p>
+      <ul class="legal-list">
+        <li>d'erreurs ou d'omissions&nbsp;;</li>
+        <li>d'une indisponibilité du site&nbsp;;</li>
+        <li>ou de tout dommage direct ou indirect résultant de l'utilisation du site.</li>
+      </ul>
+    </div>
+
+    <!-- 7. DROIT APPLICABLE -->
+    <div class="legal-block reveal">
+      <h2 class="h3">7. Droit applicable</h2>
+      <p>Le présent site est soumis au droit français. En cas de litige, et à défaut de solution amiable, les tribunaux français seront seuls compétents.</p>
+    </div>
+
+    <div class="legal-block reveal">
+      <p class="legal-meta">Dernière mise à jour&nbsp;: {UPDATED}.</p>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .legal-doc { max-width: 820px; margin-inline: auto; }
+  .legal-block { padding: 26px 0; border-bottom: 1px solid var(--line); }
+  .legal-block:last-child { border-bottom: 0; }
+  .legal-doc h2.h3 { margin-bottom: 4px; }
+  .legal-doc p { margin-top: 14px; color: var(--ink-2); line-height: 1.75; }
+  .legal-doc a { color: var(--violet); font-weight: 600; }
+  .legal-list { margin-top: 12px; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; color: var(--ink-2); line-height: 1.6; }
+  .legal-facts { margin-top: 16px; display: grid; gap: 0; }
+  .legal-facts > div { display: grid; grid-template-columns: 230px 1fr; gap: 16px; padding: 11px 0; border-top: 1px solid var(--line); }
+  .legal-facts > div:first-child { border-top: 0; }
+  .legal-facts dt { font-weight: 700; color: var(--ink); }
+  .legal-facts dd { margin: 0; color: var(--ink-2); }
+  .legal-meta { font-size: 14px; color: var(--muted); }
+  @media (max-width: 640px) {
+    .legal-facts > div { grid-template-columns: 1fr; gap: 4px; }
+    .legal-facts dt { color: var(--violet); }
+  }
+</style>
+</Base>
